@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Data //Gera os Getters e Setters e contemm dentro outras anotações
+@Data //Gera os Getters e Setters e contem dentro outras anotações
 @Table(name = "Usuarios")
 public class Usuario {
 
@@ -21,7 +21,5 @@ public class Usuario {
     private String endereco;
 
     @OneToMany(mappedBy = "usuario")
-    private List<Livro> listaLivros;
-
-
+    private List<Compras> compras;
 }
