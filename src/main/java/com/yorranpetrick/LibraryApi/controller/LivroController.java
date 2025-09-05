@@ -1,6 +1,6 @@
 package com.yorranpetrick.LibraryApi.controller;
 
-import com.yorranpetrick.LibraryApi.models.Livro;
+import com.yorranpetrick.LibraryApi.domain.Livro;
 import com.yorranpetrick.LibraryApi.service.LivroService;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +15,7 @@ public class LivroController {
     }
 
     @PostMapping
-    public void salvarLivro(@RequestBody Livro livro, @RequestParam String idAutorLivro, @RequestParam String idUsuario) {
-        livroService.salvarLivro(livro, idAutorLivro, idUsuario);
+    public void salvarLivro(@RequestBody Livro livro, @RequestParam String idAutorLivro) {
+        livroService.salvarLivro(livro, idAutorLivro);
     }
 }

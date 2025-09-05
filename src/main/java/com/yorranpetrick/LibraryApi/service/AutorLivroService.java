@@ -1,10 +1,9 @@
 package com.yorranpetrick.LibraryApi.service;
 
-import com.yorranpetrick.LibraryApi.models.AutorLivro;
+import com.yorranpetrick.LibraryApi.domain.AutorLivro;
 import com.yorranpetrick.LibraryApi.repository.AutorLivroRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
 import java.util.UUID;
 
 @Service

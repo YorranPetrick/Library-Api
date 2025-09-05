@@ -4,7 +4,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update #Cria o Banco de Dados automaticamente se baseando na ORM
+      ddl-auto: create  #Cria o Banco de Dados automaticamente se baseando na ORM
     show-sql: true
 
   datasource:

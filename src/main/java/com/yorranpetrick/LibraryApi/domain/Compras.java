@@ -1,4 +1,4 @@
-package com.yorranpetrick.LibraryApi.models;
+package com.yorranpetrick.LibraryApi.domain;
 
 
 import jakarta.persistence.*;
@@ -24,4 +24,14 @@ public class Compras {
     @ManyToOne
     @JoinColumn(name = "idUsuario")
     private Usuario usuario;
+
+    public Compras(LocalDate dataCompra, Livro livro, Usuario usuario) {
+        this.dataCompra = dataCompra;
+        this.livro = livro;
+        this.usuario = usuario;
+    }
+
+    public Compras() {
+
+    }
 }

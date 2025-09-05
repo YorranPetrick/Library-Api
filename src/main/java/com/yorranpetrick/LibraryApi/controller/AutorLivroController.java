@@ -1,6 +1,6 @@
 package com.yorranpetrick.LibraryApi.controller;
 
-import com.yorranpetrick.LibraryApi.models.AutorLivro;
+import com.yorranpetrick.LibraryApi.domain.AutorLivro;
 import com.yorranpetrick.LibraryApi.service.AutorLivroService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

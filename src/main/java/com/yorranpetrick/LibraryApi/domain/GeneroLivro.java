@@ -1,4 +1,4 @@
-package com.yorranpetrick.LibraryApi.models;
+package com.yorranpetrick.LibraryApi.domain;
 
 public enum GeneroLivro {
             AÇÃO,

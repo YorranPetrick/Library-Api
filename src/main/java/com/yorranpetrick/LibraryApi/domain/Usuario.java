@@ -1,4 +1,4 @@
-package com.yorranpetrick.LibraryApi.models;
+package com.yorranpetrick.LibraryApi.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -19,6 +19,8 @@ public class Usuario {
     private String email;
     @Column(nullable = false)
     private String endereco;
+    @Column(nullable = false)
+    private String senha;
 
     @OneToMany(mappedBy = "usuario")
     private List<Compras> compras;

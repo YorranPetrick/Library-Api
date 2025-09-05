@@ -1,6 +1,6 @@
 package com.yorranpetrick.LibraryApi.controller;
 
-import com.yorranpetrick.LibraryApi.models.Usuario;
+import com.yorranpetrick.LibraryApi.domain.Usuario;
 import com.yorranpetrick.LibraryApi.service.UsuarioService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,7 +18,7 @@ public class UsuarioController {
     }
 
 
-    @PostMapping
+    @PostMapping("/login")
     public void salvarUsuario(@RequestBody Usuario usuario){
         usuarioService.salvarUsuario(usuario);
     }

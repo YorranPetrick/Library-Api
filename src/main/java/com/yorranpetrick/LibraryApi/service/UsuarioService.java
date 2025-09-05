@@ -1,7 +1,7 @@
 package com.yorranpetrick.LibraryApi.service;
 
 
-import com.yorranpetrick.LibraryApi.models.Usuario;
+import com.yorranpetrick.LibraryApi.domain.Usuario;
 import com.yorranpetrick.LibraryApi.repository.UsuarioRepository;
 import org.springframework.stereotype.Service;
 

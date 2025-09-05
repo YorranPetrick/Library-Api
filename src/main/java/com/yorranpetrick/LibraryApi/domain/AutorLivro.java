@@ -1,4 +1,4 @@
-package com.yorranpetrick.LibraryApi.models;
+package com.yorranpetrick.LibraryApi.domain;
 
 import jakarta.persistence.*;
 import lombok.Getter;
